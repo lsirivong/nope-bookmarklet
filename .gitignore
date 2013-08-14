@@ -1,0 +1,4 @@
+node_modules/
+node_modules/*
+nope-bookmarklet.min.js
+nope-bookmarklet.bookmarklet.js
