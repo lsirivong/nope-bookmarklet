@@ -132,7 +132,6 @@ footer {
 			width: 100%;
 			height: 2px;
 		} footer a:hover, footer a:focus {
-				background: #e00; // no gradient fallback
 				background: repeating-linear-gradient(to right, red, orange 20px, yellow 40px, lime 60px, blue 80px, violet 100px, red 120px);
 				background-size: 120px 100%;
 				-webkit-background-clip: text;
@@ -141,7 +140,6 @@ footer {
 				animation: fancy-anim 500ms infinite linear;
 				text-shadow: 0 0 0.6em #fff;
 				} footer a:hover:after, footer a:focus:after {
-					background: #e00; // no gradient fallback
 					background: repeating-linear-gradient(to right, red, orange 20px, yellow 40px, lime 60px, blue 80px, violet 100px, red 120px);
 					background-repeat: repeat-x;
 					background-size: 120px 2px;
@@ -149,6 +147,8 @@ footer {
 					box-shadow: inset 0 0 0.14em #fff;
 					-webkit-animation: fancy-anim 500ms infinite linear;
 					animation: fancy-anim 500ms infinite linear;
+					} .no-cssgradients footer a:hover, .no-cssgradients footer a:focus, .no-cssgradients footer a:hover:after, .no-cssgradients footer a:focus:after {
+						background: #e00;
 }
 
 .nope-examples {
