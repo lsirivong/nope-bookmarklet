@@ -153,6 +153,8 @@ footer {
 	position: relative;
 	height: 177px;
 	padding-top: 60px;
+	height: 12.2em;
+	padding-top: 3.1em;
 }
 .nope-example {
 	color: #e00;
@@ -160,46 +162,58 @@ footer {
 	border: 10px solid;
 	padding: 1px 10px;
 	position: absolute;
+	} .nope-example.nope-example-inline {
+		position: initial;
+		font-size: 1em;
+		border-width: 3px;
+		padding: 1px 3px 0;
 }
 .nope-example-1 {
 	-webkit-transform: rotate(-20deg);
-	left: -50px;
+	left: -0.8em;
 }
 .nope-example-2 {
 	-webkit-transform: rotate(-3deg);
-	left: 159px;
+	left: 2.5em;
 }
 .nope-example-3 {
 	-webkit-transform: rotate(-12deg);
-	left: 342px;
-	top: 106px;
+	left: 5.6em;
+	top: 1.4em;
 }
 .nope-example-4 {
 	-webkit-transform: rotate(14deg);
-	left: 483px;
-	top: 32px;
+	left: 7.8em;
+	top: 0.4em;
 }
 
+.cta {
+	font-weight: bold;
+	font-size: 2em;
+	line-height: 1;
+	margin: 0.5em 0 0.8em;
+}
 .bookmarklet {
 	color: rgba(134, 3, 3, 1);
 	text-decoration: none;
-	font: bold 2em/1 Helvetica, Arial, sans-serif;
 	background: #FF4747;
 	padding: 0.5em 0.56em 0.65em;
 	display: inline-block;
 	border-radius: 2px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.6), 0 1px 0 rgba(255,255,255,0.1);
-	-webkit-transition: all 300ms ease-out;
-	transition: all 300ms ease-out;
+	-webkit-transition-property: color, text-shadow, background-color;
+	-webkit-transition-duration: 300ms;
+	-webkit-transition-timing-function:; ease-out;
+	transition-property: color, text-shadow, background-color;
+	transition-duration: 300ms;
+	transition-timing-function:; ease-out;
 	box-shadow: inset 0 -0.15em 0 rgba(0, 0, 0, 0.2);
 	} .bookmarklet:hover {
 		text-shadow: 0 -1px 0 rgba(255,255,255,0.1), 0 1px 0 rgba(255,255,255,0.1), 0 0 0.3em #fff;
 		color: #fff;
 		background: #FF2727;
 	} .bookmarklet:active {
-		box-shadow: inset 0 0.06em 0 0.05em rgba(0, 0, 0, 0.4);
-		margin-top: 0.15em;
-		padding-bottom: 0.5em;
+		box-shadow: inset 0 -0.15em 0 rgba(0, 0, 0, 0.2), 0 0.06em 0.13em 0.05em rgba(0, 0, 0, 0.4);
 }
 
 .pitch, .instructions {
@@ -210,7 +224,7 @@ footer {
 .instructions {
 	text-align: center;
 	background: #eee;
-	padding: 0.6em 1.7em 1.3em;
+	padding: 0 0.9em;
 	border-radius: 2px;
 	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.04), inset 0 -1px 0 rgba(255, 255, 255, 0.9);
 	font-size: 1.2em;
