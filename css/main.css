@@ -7,8 +7,8 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+	 Base styles: opinionated defaults
+	 ========================================================================== */
 
 html,
 button,
@@ -79,8 +79,8 @@ textarea {
 }
 
 /* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
+	 Chrome Frame prompt
+	 ========================================================================== */
 
 .chromeframe {
 	margin: 0.2em 0;
@@ -90,8 +90,8 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+	 Author's custom styles
+	 ========================================================================== */
 
 body {
 	min-height: 100%;
@@ -116,11 +116,39 @@ footer {
 	text-align: center;
 	color: #ccc;
 	} footer a {
+		position: relative;
 		color: #ccc;
 		text-decoration: none;
-		border-bottom: 2px solid #d5d5d5;
 		padding-bottom: 3px;
+		} footer a:after {
+			background: #d5d5d5;
+			background-repeat: repeat-x;
+			background-size: 120px 2px;
+			background-position: 0 bottom;
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			height: 2px;
+		} footer a:hover, footer a:focus {
+				background: repeating-linear-gradient(to right, red, orange 20px, yellow 40px, lime 60px, blue 80px, violet 100px, red 120px);
+				background-size: 120px 100%;
+				-webkit-background-clip: text;
+				color: transparent;
+				-webkit-animation: fancy-anim 500ms infinite linear;
+				animation: fancy-anim 500ms infinite linear;
+				text-shadow: 0 0 0.6em #fff;
+				} footer a:hover:after, footer a:focus:after {
+					background: repeating-linear-gradient(to right, red, orange 20px, yellow 40px, lime 60px, blue 80px, violet 100px, red 120px);
+					background-repeat: repeat-x;
+					background-size: 120px 2px;
+					background-position: 0 bottom;
+					box-shadow: inset 0 0 0.14em #fff;
+					-webkit-animation: fancy-anim 500ms infinite linear;
+					animation: fancy-anim 500ms infinite linear;
 }
+
 .nope-examples {
 	position: relative;
 	height: 177px;
@@ -194,14 +222,30 @@ footer {
 		margin-top: 0;
 }
 
+@-webkit-keyframes fancy-anim {
+	0% {
+		background-position: 0 bottom;
+	}
+	100% {
+		background-position: -120px 0;
+	}
+}
+@keyframes fancy-anim {
+	0% {
+		background-position: 0 bottom;
+	}
+	100% {
+		background-position: -120px 0;
+	}
+}
 
 
 
 
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+	 Helper classes
+	 ========================================================================== */
 
 /*
  * Image replacement
@@ -301,26 +345,26 @@ footer {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+	 EXAMPLE Media Queries for Responsive Design.
+	 These examples override the primary ('mobile first') styles.
+	 Modify as content requires.
+	 ========================================================================== */
 
 @media only screen and (min-width: 35em) {
 	/* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-	   (-o-min-device-pixel-ratio: 5/4),
-	   (-webkit-min-device-pixel-ratio: 1.25),
-	   (min-resolution: 120dpi) {
+		 (-o-min-device-pixel-ratio: 5/4),
+		 (-webkit-min-device-pixel-ratio: 1.25),
+		 (min-resolution: 120dpi) {
 	/* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+	 Print styles.
+	 Inlined to avoid required HTTP connection: h5bp.com/r
+	 ========================================================================== */
 
 @media print {
 	* {
