@@ -132,6 +132,7 @@ footer {
 			width: 100%;
 			height: 2px;
 		} footer a:hover, footer a:focus {
+				background: -webkit-repeating-linear-gradient(0deg, red, orange 20px, yellow 40px, lime 60px, blue 80px, violet 100px, red 120px);
 				background: repeating-linear-gradient(to right, red, orange 20px, yellow 40px, lime 60px, blue 80px, violet 100px, red 120px);
 				background-size: 120px 100%;
 				-webkit-background-clip: text;
@@ -140,6 +141,7 @@ footer {
 				animation: fancy-anim 500ms infinite linear;
 				text-shadow: 0 0 0.6em #fff;
 				} footer a:hover:after, footer a:focus:after {
+					background: -webkit-repeating-linear-gradient(0deg, red, orange 20px, yellow 40px, lime 60px, blue 80px, violet 100px, red 120px);
 					background: repeating-linear-gradient(to right, red, orange 20px, yellow 40px, lime 60px, blue 80px, violet 100px, red 120px);
 					background-repeat: repeat-x;
 					background-size: 120px 2px;
